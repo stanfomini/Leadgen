@@ -1,0 +1,18 @@
+namespace App\Filament\Resources;
+
+use Filament\Resources\UserResource;
+
+class UserRole extends UserResource
+{
+    public static function abilities(): array
+    {
+        return [
+            'viewAny' => 'View any records',
+            'view' => 'View records',
+            'create' => 'Create records',
+            'update' => 'Update records',
+            'delete' => 'Delete records',
+        ];
+    }
+}
+

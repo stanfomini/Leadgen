@@ -40,4 +40,22 @@ return [
 
     'default_filesystem_disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),
 
+
+
+
+
+	'nav' => [
+    \App\Filament\Resources\CustomerResource::class,
+    \App\Filament\Resources\VendorResource::class,
+    // ... other resources
+	],
+
+
+	 'widgets' => [
+    \App\Filament\Widgets\TotalCustomers::class,
+    // ... other widgets
+	],
+
 ];
+
+	
